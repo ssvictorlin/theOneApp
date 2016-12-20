@@ -9,6 +9,12 @@ var config = {
   output: {
     path: OUTPUT,
     filename: "func.js"
+  },
+  module: {
+    loaders: [{
+        include: DEV,
+        loader: "babel",
+    }]
   }
 };
  
